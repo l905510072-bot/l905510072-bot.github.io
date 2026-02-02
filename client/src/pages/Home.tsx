@@ -9,7 +9,7 @@ import { useEffect, useState } from "react";
  * Layout: Non-symmetric, poster-style hero section
  */
 
-const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663286619585/RCdPqETSeGsoKWNR.jpg";
+const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663286619585/HpBToCsyiUUeGfMJ.jpg";
 const POSTER_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663286619585/kYchOzMOLpULxtne.jpg";
 
 export default function Home() {
