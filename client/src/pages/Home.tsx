@@ -90,9 +90,10 @@ export default function Home() {
                 立即報名
                 <ArrowRight className="w-5 h-5" />
               </button>
-              <button className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg transition-all duration-300 hover:bg-accent/10">
+              <a href="#about" className="px-8 py-3 border-2 border-accent text-accent font-semibold rounded-lg transition-all duration-300 hover:bg-accent/10 inline-flex items-center justify-center gap-2">
                 了解更多
-              </button>
+                <ArrowRight className="w-5 h-5" />
+              </a>
             </div>
 
             <div className="pt-4 border-t border-gray-600">
