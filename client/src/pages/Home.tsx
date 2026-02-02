@@ -73,7 +73,8 @@ export default function Home() {
             <div>
               <div className="gold-divider mb-6"></div>
               <h1 className="text-5xl md:text-6xl font-bold text-accent leading-tight" style={{ fontFamily: "'Playfair Display', serif" }}>
-                Lighthouse Film Festival
+                Lighthouse<br />
+                Film Festival
               </h1>
               <h2 className="text-3xl md:text-4xl font-bold text-white mt-4" style={{ fontFamily: "'Playfair Display', serif" }}>
                 灯塔影展
