@@ -1,4 +1,4 @@
-import { Film, Users, Lightbulb } from "lucide-react";
+import { Film, Users, Lightbulb, Award, Calendar, MapPin, Mail } from "lucide-react";
 
 /**
  * LGFF Promo Site - Modern Religious Art + Cinema Aesthetic
@@ -24,14 +24,17 @@ export default function Home() {
             </div>
           </div>
           <div className="flex items-center gap-6">
-            <a href="#about" className="text-sm text-gray-300 hover:text-accent transition-colors">
-              关于
+            <a href="#vision" className="text-sm text-gray-300 hover:text-accent transition-colors">
+              异象
             </a>
             <a href="#requirements" className="text-sm text-gray-300 hover:text-accent transition-colors">
-              参赛资格
+              资格
             </a>
-            <a href="#deadline" className="text-sm text-gray-300 hover:text-accent transition-colors">
-              截止日期
+            <a href="#awards" className="text-sm text-gray-300 hover:text-accent transition-colors">
+              奖项
+            </a>
+            <a href="#contact" className="text-sm text-gray-300 hover:text-accent transition-colors">
+              联系
             </a>
           </div>
         </div>
@@ -63,15 +66,16 @@ export default function Home() {
               <h2 className="text-3xl md:text-4xl font-bold text-white mt-4" style={{ fontFamily: "'Playfair Display', serif" }}>
                 灯塔影展
               </h2>
+              <p className="text-xl text-accent mt-4 font-semibold">Where Faith Becomes Story</p>
             </div>
 
             <p className="text-lg text-gray-200 max-w-lg">
-              由臺北基督學院發起，聚焦全球基督徒學生的福音影像創作。我們邀請以劇情敘事呈現信仰、盼望、救贖與生命更新的故事。
+              全球基督徒青年劇情片創作平台。當信仰進入故事，故事便成為光。當創作回應呼召，影像便成為見證。
             </p>
 
             <div className="pt-4 border-t border-gray-600">
               <p className="text-sm text-gray-400">
-                <span className="text-accent font-semibold">截止日期：</span> 2026年6月30日 23:59 (GMT+8)
+                <span className="text-accent font-semibold">報名截止：</span> 2026年7月31日 23:59 (GMT+8)
               </p>
             </div>
           </div>
@@ -87,37 +91,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="section-padding bg-card">
+      {/* Vision Section */}
+      <section id="vision" className="section-padding bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="gold-divider mb-6"></div>
-            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>關於影展</h2>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>異象與使命</h2>
 
             <div className="space-y-6 text-gray-300">
-              <p>
-                <strong className="text-accent">燈塔影展（LFF）</strong>由臺北基督學院發起，是一個全球性的平台，致力於展示由基督徒學生創作的福音中心敘事故事片。
+              <p className="text-lg">
+                <span className="text-accent font-bold">點燃 — 讓信仰成為故事</span>
               </p>
 
               <p>
-                我們邀請具有信仰、希望、救贖和生命轉變的故事，並透過作品交流與策展實踐，培育新世代以影像作見證的創作者。
+                在影像成為當代世代主要語言的時代，福音如何被看見？信仰如何被聽見？基督徒青年如何以創作回應呼召？
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8 pt-8 border-t border-gray-600">
-                <div className="space-y-3">
-                  <Film className="w-8 h-8 text-accent" />
-                  <h3 className="text-lg font-semibold text-white">劇情片</h3>
-                  <p className="text-sm text-gray-400">20–90 分鐘的劇情長片</p>
+              <p>
+                燈塔影展由臺北基督學院發起，旨在建立一個屬於全球基督徒青年（45 歲以下）的福音影像創作平台。
+              </p>
+
+              <div className="bg-background p-6 rounded-lg border border-gray-700 mt-6">
+                <p className="text-accent font-semibold mb-4">我們相信：</p>
+                <ul className="space-y-3">
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>當信仰進入故事，故事便成為光</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>當創作回應呼召，影像便成為見證</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+                <div className="bg-background p-4 rounded-lg border border-gray-700">
+                  <p className="text-accent font-semibold mb-2">創作焦點：</p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• 盼望與救贖</li>
+                    <li>• 信仰與掙扎</li>
+                    <li>• 和好與更新</li>
+                    <li>• 當代處境中的福音回應</li>
+                  </ul>
                 </div>
-                <div className="space-y-3">
-                  <Users className="w-8 h-8 text-accent" />
-                  <h3 className="text-lg font-semibold text-white">學生創作</h3>
-                  <p className="text-sm text-gray-400">限學生身分參賽</p>
-                </div>
-                <div className="space-y-3">
-                  <Lightbulb className="w-8 h-8 text-accent" />
-                  <h3 className="text-lg font-semibold text-white">福音中心</h3>
-                  <p className="text-sm text-gray-400">以福音為核心的創作</p>
+                <div className="bg-background p-4 rounded-lg border border-gray-700">
+                  <p className="text-accent font-semibold mb-2">徵件主題：</p>
+                  <ul className="space-y-2 text-sm">
+                    <li>• 基督教信仰核心價值</li>
+                    <li>• 福音精神與生命見證</li>
+                    <li>• 基督徒回應當代社會</li>
+                    <li>• 神學思考與人文關懷</li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -134,19 +159,19 @@ export default function Home() {
 
             <div className="space-y-6">
               <div className="bg-card p-6 rounded-lg border border-gray-700">
-                <h3 className="text-xl font-semibold text-accent mb-4">學生身分要求</h3>
+                <h3 className="text-xl font-semibold text-accent mb-4">參賽者要求</h3>
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>報名者須為在學學生（大學、研究所、神學院或同等教育/訓練機構皆可）</span>
+                    <span>全球各地之基督徒青年（45 週歲及以下）</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>可個人或團隊報名；若為團隊，導演或主要創作者須具學生身分</span>
+                    <span>報名時須提供學生身分證明文件</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>參賽者需可提供有效學生身分證明（學生證、在學證明或註冊證明等）</span>
+                    <span>個人或團隊皆可報名</span>
                   </li>
                 </ul>
               </div>
@@ -156,7 +181,7 @@ export default function Home() {
                 <ul className="space-y-3 text-gray-300">
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>類別：劇情片/劇情長片（Narrative Feature Film）</span>
+                    <span>類型：劇情片（Narrative Film）</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
@@ -164,11 +189,15 @@ export default function Home() {
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>須提供英文字幕（English Subtitles Required）</span>
+                    <span>製作年份：2023 年 1 月 1 日後完成之作品</span>
                   </li>
                   <li className="flex gap-3">
                     <span className="text-accent font-bold">•</span>
-                    <span>不收：紀錄片、動畫、MV、實驗片</span>
+                    <span>語言不限，非英文影片須附英文字幕</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>作品須確保音樂、肖像及相關智慧財產權合法使用</span>
                   </li>
                 </ul>
               </div>
@@ -177,65 +206,93 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Themes Section */}
+      {/* Submission Section */}
       <section className="section-padding bg-card">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="gold-divider mb-6"></div>
-            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>作品主題方向</h2>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>徵件方式</h2>
 
-            <p className="text-gray-300 mb-8">
-              本影展鼓勵作品以福音為核心，呈現以下方向之一或多項：
-            </p>
+            <div className="space-y-6 text-gray-300">
+              <p>採線上報名與數位收件方式，繳交資料包括：</p>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {[
-                "信仰敘事、生命見證、呼召與回應",
-                "盼望、赦免、重建、愛與真理",
-                "青年信仰處境、關係修復、傷痛與醫治",
-                "以基督信仰價值回應世界議題（家庭、正義、饒恕、良善、誠實等）",
-              ].map((theme, idx) => (
-                <div key={idx} className="bg-background p-4 rounded-lg border border-gray-700 hover:border-accent transition-colors">
-                  <p className="text-gray-300">{theme}</p>
-                </div>
-              ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                {[
+                  { title: "影片連結", desc: "線上觀看連結（Google Drive）" },
+                  { title: "劇情簡介", desc: "中英文版本" },
+                  { title: "創作理念", desc: "創作理念說明" },
+                  { title: "導演簡歷", desc: "導演簡歷及背景" },
+                ].map((item, idx) => (
+                  <div key={idx} className="bg-background p-4 rounded-lg border border-gray-700">
+                    <p className="text-accent font-semibold mb-2">{item.title}</p>
+                    <p className="text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="bg-background p-6 rounded-lg border-2 border-accent mt-8">
+                <p className="text-lg font-semibold text-white mb-2">報名截止日期</p>
+                <p className="text-2xl text-accent font-bold">2026 年 7 月 31 日 23:59 (GMT+8)</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Detailed Information Section */}
+      {/* Evaluation Section */}
       <section className="section-padding bg-background">
         <div className="container">
           <div className="max-w-3xl mx-auto">
             <div className="gold-divider mb-6"></div>
-            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>詳細信息</h2>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>評選方式</h2>
 
-            <div className="space-y-8 text-gray-300">
+            <div className="space-y-6 text-gray-300">
               <div>
-                <h3 className="text-xl font-semibold text-accent mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>字幕規則</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm">
-                  <li>參賽作品須提供英文字幕（English Subtitles Required）</li>
-                  <li>若原片語言非英文，請提供可清楚閱讀之英文字幕檔（建議 SRT 格式）或內嵌字幕版本</li>
-                </ul>
+                <h3 className="text-xl font-semibold text-accent mb-4">評選流程</h3>
+                <div className="space-y-3">
+                  <div className="flex gap-4">
+                    <div className="text-accent font-bold text-lg">①</div>
+                    <div>
+                      <p className="font-semibold">初選</p>
+                      <p className="text-sm">由校內教師與專業顧問組成評審團</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-accent font-bold text-lg">②</div>
+                    <div>
+                      <p className="font-semibold">決選</p>
+                      <p className="text-sm">專業評審進行最終評定</p>
+                    </div>
+                  </div>
+                  <div className="flex gap-4">
+                    <div className="text-accent font-bold text-lg">③</div>
+                    <div>
+                      <p className="font-semibold">公告</p>
+                      <p className="text-sm">評選結果於 2026 年 9 月 30 日公告</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
               <div>
-                <h3 className="text-xl font-semibold text-accent mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>評選重點</h3>
-                <ol className="list-decimal list-inside space-y-2 text-sm">
-                  <li>福音核心與價值清晰度</li>
-                  <li>劇情敘事完整性與角色塑造</li>
-                  <li>主題深度與情感真實性</li>
-                  <li>影像語言與整體完成度</li>
-                  <li>創意與表達風格</li>
-                </ol>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-semibold text-accent mb-3" style={{ fontFamily: "'Playfair Display', serif" }}>著作權與授權聲明</h3>
-                <ul className="list-disc list-inside space-y-2 text-sm">
-                  <li>參賽者須保證作品為原創或已取得合法授權（含音樂、影像素材、劇本改編等）</li>
-                  <li>參賽者同意主辦單位得於影展推廣、徵件宣傳、入圍公告與成果展示之範圍內，使用作品之片名、劇照、海報、預告片與片段（非商業用途），並註明創作者資訊</li>
+                <h3 className="text-xl font-semibold text-accent mb-4">評選標準</h3>
+                <ul className="space-y-2 text-sm">
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>信仰內涵與神學深度</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>敘事完整性</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>影像語言與創作成熟度</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>當代議題回應能力</span>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -243,38 +300,171 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Deadline Section */}
-      <section id="deadline" className="section-padding bg-card">
+      {/* Awards Section */}
+      <section id="awards" className="section-padding bg-card">
         <div className="container">
-          <div className="max-w-3xl mx-auto text-center">
-            <div className="gold-divider mx-auto mb-6"></div>
-            <h2 className="text-4xl font-bold text-accent mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>徵件截止</h2>
+          <div className="max-w-3xl mx-auto">
+            <div className="gold-divider mb-6"></div>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>競賽獎項</h2>
 
-            <div className="bg-background p-12 rounded-lg border-2 border-accent">
-              <p className="text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>6月30日</p>
-              <p className="text-2xl text-gray-300 mb-2">2026年</p>
-              <p className="text-lg text-gray-400">23:59 (GMT+8)</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {[
+                { rank: "首獎", name: "第一名", prize: "新臺幣 30,000 元", icon: "🥇" },
+                { rank: "優選獎", name: "第二名", prize: "新臺幣 20,000 元", icon: "🥈" },
+                { rank: "佳作獎", name: "第三名", prize: "新臺幣 10,000 元", icon: "🥉" },
+                { rank: "入圍獎", name: "三名", prize: "新臺幣 5,000 元", icon: "⭐" },
+              ].map((award, idx) => (
+                <div key={idx} className="bg-background p-6 rounded-lg border border-gray-700 hover:border-accent transition-colors">
+                  <div className="text-4xl mb-3">{award.icon}</div>
+                  <p className="text-accent font-semibold mb-1">{award.rank}</p>
+                  <p className="text-sm text-gray-400 mb-3">{award.name}</p>
+                  <p className="text-lg font-bold text-white">{award.prize}</p>
+                </div>
+              ))}
             </div>
 
-            <p className="text-gray-400 mt-8 text-sm">
-              報名費用：免費 | 影片上傳方式： Google Drive 連結
+            <p className="text-sm text-gray-400 mt-8 text-center">
+              主辦單位得視作品水準調整獎項
             </p>
           </div>
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* October Event Section */}
       <section className="section-padding bg-background">
         <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="gold-divider mb-6"></div>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>十月主場活動</h2>
+
+            <div className="space-y-6">
+              <div className="bg-card p-6 rounded-lg border border-gray-700">
+                <div className="flex gap-4 mb-4">
+                  <MapPin className="w-6 h-6 text-accent flex-shrink-0" />
+                  <div>
+                    <p className="text-accent font-semibold">地點</p>
+                    <p className="text-gray-300">臺北基督學院禮拜堂</p>
+                  </div>
+                </div>
+                <div className="flex gap-4">
+                  <Calendar className="w-6 h-6 text-accent flex-shrink-0" />
+                  <div>
+                    <p className="text-accent font-semibold">時間</p>
+                    <p className="text-gray-300">2026 年 10 月 31 日</p>
+                  </div>
+                </div>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-accent mb-4">活動內容</h3>
+                <ul className="space-y-3 text-gray-300">
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>國際導演線上論壇</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>入圍影片實體放映</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>頒獎典禮</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>電視頻道播映啟動儀式</span>
+                  </li>
+                </ul>
+                <p className="text-sm text-gray-400 mt-4">入圍導演將以線上方式參與</p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-semibold text-accent mb-4">電視頻道播映</h3>
+                <p className="text-gray-300 mb-4">
+                  入圍及得獎作品經授權後，將於 2026 年 10 月於靖天電視頻道播映。
+                </p>
+                <ul className="space-y-2 text-gray-300">
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>原版播映或經授權剪輯電視版本</span>
+                  </li>
+                  <li className="flex gap-3">
+                    <span className="text-accent font-bold">•</span>
+                    <span>加入燈塔影展識別片頭</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Authorization Section */}
+      <section className="section-padding bg-card">
+        <div className="container">
+          <div className="max-w-3xl mx-auto">
+            <div className="gold-divider mb-6"></div>
+            <h2 className="text-4xl font-bold text-white mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>授權與義務</h2>
+
+            <div className="space-y-4 text-gray-300">
+              <div className="flex gap-4">
+                <span className="text-accent font-bold text-lg">①</span>
+                <p>入圍作品須簽署播映授權書</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-bold text-lg">②</span>
+                <p>授權範圍包括影展放映、電視頻道播映及宣傳使用</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-bold text-lg">③</span>
+                <p>主辦單位得使用入圍作品之劇照與片段作為宣傳素材</p>
+              </div>
+              <div className="flex gap-4">
+                <span className="text-accent font-bold text-lg">④</span>
+                <p>得獎者依法須依規定扣繳所得稅</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="section-padding bg-background">
+        <div className="container">
           <div className="max-w-2xl mx-auto text-center space-y-8">
-            <h2 className="text-4xl font-bold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
-              準備好分享您的故事了嗎？
-            </h2>
-            <p className="text-lg text-gray-300">
-              無論您是獨立創作者還是創意團隊，我們都期待看到您以影像見證信仰的力量。
-            </p>
-            <p className="text-sm text-gray-400">
-              如有任何問題，請聯繫主辦單位或訪問我們的官方網站了解更多信息。
+            <div>
+              <div className="gold-divider mx-auto mb-6"></div>
+              <h2 className="text-4xl font-bold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
+                聯絡方式
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              <div className="bg-card p-6 rounded-lg border border-gray-700">
+                <p className="text-gray-300 mb-2">燈塔影展工作小組</p>
+                <div className="flex items-center justify-center gap-2 text-accent font-semibold">
+                  <Mail className="w-5 h-5" />
+                  <a href="mailto:lff@cct.edu.tw" className="hover:text-accent/80 transition-colors">
+                    lff@cct.edu.tw
+                  </a>
+                </div>
+              </div>
+
+              <div className="bg-card p-6 rounded-lg border border-gray-700">
+                <p className="text-gray-300 mb-2">官方網站</p>
+                <a href="https://lff2026.com" target="_blank" rel="noopener noreferrer" className="text-accent font-semibold hover:text-accent/80 transition-colors">
+                  lff2026.com
+                </a>
+              </div>
+
+              <div className="bg-card p-6 rounded-lg border border-gray-700">
+                <p className="text-gray-300 mb-2">主辦單位</p>
+                <p className="text-accent font-semibold">臺北基督學院</p>
+              </div>
+            </div>
+
+            <p className="text-gray-400 text-sm pt-8 border-t border-gray-700">
+              影展主持人：沈湘燕 教授 | 合作媒體：靖天電視 | 產學合作：承業法律事務所
             </p>
           </div>
         </div>
@@ -293,16 +483,18 @@ export default function Home() {
             <div>
               <h3 className="text-lg font-bold text-accent mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>快速連結</h3>
               <ul className="space-y-2 text-sm text-gray-400">
-                <li><a href="#about" className="hover:text-accent transition-colors">關於影展</a></li>
+                <li><a href="#vision" className="hover:text-accent transition-colors">異象與使命</a></li>
                 <li><a href="#requirements" className="hover:text-accent transition-colors">參賽資格</a></li>
-                <li><a href="#deadline" className="hover:text-accent transition-colors">截止日期</a></li>
+                <li><a href="#awards" className="hover:text-accent transition-colors">競賽獎項</a></li>
+                <li><a href="#contact" className="hover:text-accent transition-colors">聯絡方式</a></li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bold text-accent mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>聯絡方式</h3>
+              <h3 className="text-lg font-bold text-accent mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>信息</h3>
               <p className="text-gray-400 text-sm">
-                主辦單位：臺北基督學院<br />
-                Lighthouse Film Festival (LFF)
+                報名截止：2026年7月31日<br />
+                結果公告：2026年9月30日<br />
+                主場活動：2026年10月31日
               </p>
             </div>
           </div>
