@@ -71,7 +71,7 @@ export default function Home() {
 
             <div className="pt-4 border-t border-gray-600">
               <p className="text-sm text-gray-400">
-                <span className="text-accent font-semibold">截止日期：</span> 2026年3月31日 23:59 (GMT+8)
+                <span className="text-accent font-semibold">截止日期：</span> 2026年6月30日 23:59 (GMT+8)
               </p>
             </div>
           </div>
@@ -251,13 +251,13 @@ export default function Home() {
             <h2 className="text-4xl font-bold text-accent mb-8" style={{ fontFamily: "'Playfair Display', serif" }}>徵件截止</h2>
 
             <div className="bg-background p-12 rounded-lg border-2 border-accent">
-              <p className="text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>3月31日</p>
+              <p className="text-6xl font-bold text-white mb-4" style={{ fontFamily: "'Playfair Display', serif" }}>6月30日</p>
               <p className="text-2xl text-gray-300 mb-2">2026年</p>
               <p className="text-lg text-gray-400">23:59 (GMT+8)</p>
             </div>
 
             <p className="text-gray-400 mt-8 text-sm">
-              報名費用：免費 | 影片上傳方式：YouTube/Vimeo 私密連結 或 Google Drive 連結
+              報名費用：免費 | 影片上傳方式： Google Drive 連結
             </p>
           </div>
         </div>
