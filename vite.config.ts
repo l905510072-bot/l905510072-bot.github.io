@@ -153,7 +153,7 @@ function vitePluginManusDebugCollector(): Plugin {
 const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
-  base:"/1/",
+  base:"/l905510072-bot.github.io/",
   plugins,
   resolve: {
     alias: {
