@@ -430,14 +430,14 @@ export default function Home() {
 
       {/* Contact Section */}
       <section id="contact" className="section-padding bg-background">
-        <div className="container">
+        <div className="container"></div>
           <div className="max-w-2xl mx-auto text-center space-y-8">
             <div>
               <div className="gold-divider mx-auto mb-6"></div>
               <h2 className="text-4xl font-bold text-white" style={{ fontFamily: "'Playfair Display', serif" }}>
                 聯絡方式
               </h2>
-            </div>
+        </div>
 
             <div className="space-y-6">
               <div className="bg-card p-6 rounded-lg border border-gray-700">
@@ -457,12 +457,16 @@ export default function Home() {
                 </a>
               </div>
 
-              <div className="bg-card p-6 rounded-lg border border-gray-700">
-                <p className="text-gray-300 mb-2">主辦單位</p>
-                <p className="text-accent font-semibold">臺北基督學院</p>
-                <p className="text-accent font-semibold">承業法律事務所</p>
+             <div className="bg-card p-6 rounded-lg border border-gray-700">
+               <p className="text-gray-300 mb-2">主辦單位</p >
+  
+               {/* 用 flex 让两个单位横向排列 */}
+               <div className="flex gap-4">
+               <p className="text-accent font-semibold">臺北基督學院</p >
+               <p className="text-accent font-semibold">| 承業法律事務所</p >
               </div>
-            </div>
+            </div> 
+           
 
             <p className="text-gray-400 text-sm pt-8 border-t border-gray-700">
               影展主持人：沈湘燕 教授 | 合作媒體：靖天電視 | 產學合作：承業法律事務所
